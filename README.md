@@ -1,5 +1,8 @@
-# SALRYN
-### General Merchandise Edition
+![Salryn General Merchandise](assets/salryn-gm-repo-banner.png)
+
+# Salryn General Merchandise
+
+### A flavor of the Salryn Kernel
 
 **Point of sale. Inventory. Procurement. Business operations.**
 
@@ -7,7 +10,7 @@ Salryn is a Windows-based, offline-ready retail management system by **Kirjane L
 
 [**Windows downloads**](https://github.com/Kirch-Nairu/Salryn-General-Merchandise/releases) · [Installation guide](INSTALLATION.md) · [Support & FAQ](SUPPORT.md)
 
-> **Availability:** The Beta RC1 installer has completed internal build and installed-runtime acceptance. Public download has not yet been published. This repository will host authorized installers under Releases; it does not host application source code.
+> **Release status:** The branded General Merchandise candidate is under private engineering and independent review. No branded installer is publicly authorized yet. This repository will host authorized installers under Releases; it does not host application source code.
 
 ## Who Salryn is built for
 
@@ -189,7 +192,7 @@ Operational reports, receipts and PDFs are business-management tools. Confirm ap
 
 Go to [GitHub Releases](https://github.com/Kirch-Nairu/Salryn-General-Merchandise/releases). When an authorized version is published, download its Windows setup executable from **Assets**, not GitHub's automatically generated source-code archives.
 
-The planned Beta RC1 setup filename is `Salryn-POS-BetaRC1-Setup.exe`. Installation and upgrade guidance is available in [INSTALLATION.md](INSTALLATION.md).
+The planned setup filename is `Salryn-General-Merchandise-BetaRC1-Setup.exe`. Installation and upgrade guidance is available in [INSTALLATION.md](INSTALLATION.md). Do not download GitHub-generated source archives as installers.
 
 ## About & support
 

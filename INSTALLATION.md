@@ -15,7 +15,7 @@ You do not need to install the .NET SDK, Node.js, npm, Inno Setup, or developer 
 3. Compare its SHA-256 with the checksum published with that exact release. Check the signature and publisher information as described in the release notes. Do not proceed with a mismatch or unexplained Windows security warning; contact support.
 4. Run the installer and approve the Windows administrator prompt if authorized. Follow the wizard.
 5. Keep internet access available if setup needs to install WebView2.
-6. Open **Salryn POS** from the Start menu or desktop shortcut.
+6. Open **Salryn General Merchandise** from the Start menu or desktop shortcut.
 7. Complete the initial store setup and product activation with Kirjane's onboarding guidance. Create authorized staff accounts, configure store details and receipt printing, then validate a test transaction before live operation.
 
 ## Verify the downloaded file
@@ -23,8 +23,8 @@ You do not need to install the .NET SDK, Node.js, npm, Inno Setup, or developer 
 In PowerShell, from the folder containing the downloaded installer:
 
 ```powershell
-Get-FileHash .\Salryn-POS-BetaRC1-Setup.exe -Algorithm SHA256
-Get-AuthenticodeSignature .\Salryn-POS-BetaRC1-Setup.exe
+Get-FileHash .\Salryn-General-Merchandise-BetaRC1-Setup.exe -Algorithm SHA256
+Get-AuthenticodeSignature .\Salryn-General-Merchandise-BetaRC1-Setup.exe
 ```
 
 Compare with the exact release's published checksum and signature status. A matching checksum detects differences from the referenced file; it does not replace a trusted digital signature. Do not disable antivirus, SmartScreen or other security controls.
