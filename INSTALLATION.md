@@ -65,4 +65,4 @@ Use Backup & Restore only in the disposable environment for this pilot. A restor
 
 Provenance regression 35/35, CoreSmoke, and web unit 15/15 are **reported PASS** checks, not native installation acceptance. No BIR certification or production-ready claim is made. LAN terminals and cloud synchronization are not offered for production use in this candidate.
 
-For assistance, contact [salryn.info@gmail.com](mailto:salryn.info@gmail.com). Include the version, Windows edition, and reproduction steps using fictional data; remove sensitive details from screenshots.
+For assistance, contact [kirjanelabs@gmail.com](mailto:kirjanelabs@gmail.com). Include the version, Windows edition, and reproduction steps using fictional data; remove sensitive details from screenshots.
