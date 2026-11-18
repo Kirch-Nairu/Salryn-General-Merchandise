@@ -10,7 +10,7 @@ Salryn is a Windows-based, offline-ready retail management system by **Kirjane L
 
 [**Windows downloads**](https://github.com/Kirch-Nairu/Salryn-General-Merchandise/releases) · [Installation guide](INSTALLATION.md) · [Support & FAQ](SUPPORT.md)
 
-> **Release status:** The branded General Merchandise candidate is under private engineering and independent review. No branded installer is publicly authorized yet. This repository will host authorized installers under Releases; it does not host application source code.
+> **Beta RC1 is available for controlled pilot testing:** [Download the Windows installer](https://github.com/Kirch-Nairu/Salryn-General-Merchandise/releases/download/v0.1.0-rc1/Salryn-General-Merchandise-BetaRC1-Setup.exe) · [Checksum](https://github.com/Kirch-Nairu/Salryn-General-Merchandise/releases/download/v0.1.0-rc1/Salryn-General-Merchandise-BetaRC1-Setup.exe.sha256.txt) · [Release notes and open QA gates](https://github.com/Kirch-Nairu/Salryn-General-Merchandise/releases/tag/v0.1.0-rc1). **Unsigned (`NotSigned`), not production-approved.** Use an authorized disposable Windows test environment with fictional data. Native clean-install, upgrade, and security acceptance remain incomplete. Do not upgrade a live client installation or use this as a side-by-side install: shared installer/data identity may replace an existing Salryn installation. This repository contains public documentation and branding assets, not proprietary application source.
 
 ## Who Salryn is built for
 
@@ -173,7 +173,7 @@ Salryn is a Windows-based, offline-ready retail management system by **Kirjane L
 - License the Windows Host through the applicable Kirjane agreement.
 - Store transactions and operational data locally; routine Host operation does not depend on a continuous internet connection.
 - Create, download, import, verify and restore local backups using authorized controls.
-- Preserve the application-data directory during supported upgrades and uninstallation. Always maintain a separate verified backup before an update.
+- The installer is designed to preserve application data, but Beta RC1 upgrade preservation and rollback have not passed native acceptance. Maintain a separate verified backup before any future authorized update.
 - Installation does not require a developer toolchain or a separately launched web server.
 
 ## Edition boundaries
@@ -190,14 +190,24 @@ Operational reports, receipts and PDFs are business-management tools. Confirm ap
 
 ## Download & installation
 
-Go to [GitHub Releases](https://github.com/Kirch-Nairu/Salryn-General-Merchandise/releases). When an authorized version is published, download its Windows setup executable from **Assets**, not GitHub's automatically generated source-code archives.
+**[Download Salryn General Merchandise Beta RC1 for Windows x64](https://github.com/Kirch-Nairu/Salryn-General-Merchandise/releases/download/v0.1.0-rc1/Salryn-General-Merchandise-BetaRC1-Setup.exe)**
 
-The planned setup filename is `Salryn-General-Merchandise-BetaRC1-Setup.exe`. Installation and upgrade guidance is available in [INSTALLATION.md](INSTALLATION.md). Do not download GitHub-generated source archives as installers.
+[SHA-256 checksum file](https://github.com/Kirch-Nairu/Salryn-General-Merchandise/releases/download/v0.1.0-rc1/Salryn-General-Merchandise-BetaRC1-Setup.exe.sha256.txt) · [Release notes](https://github.com/Kirch-Nairu/Salryn-General-Merchandise/releases/tag/v0.1.0-rc1) · [Pilot installation guide](INSTALLATION.md)
+
+- Version: `0.1.0-rc1`; installer size: **23,583,715 bytes**.
+- SHA-256: `d2c5274cc4d28f2590755dc891e503973e8824a3faedf63e11227b2036c74eb8`.
+- Signature: **NotSigned**. A checksum match does not replace trusted signing. Do not bypass Windows security controls.
+- Requires .NET 10 Desktop Runtime, ASP.NET Core Runtime, WebView2, and administrator authorization for setup.
+- **Pilot only:** no live client upgrades or side-by-side installation. Native clean/upgrade acceptance, packed-payload verification, security lab (Issue #91), independent source review, and signing remain open. The reported mocked browser suite failed: **30/56 passed**, with 15 visual differences and 11 reported inherited selector mismatches not independently reconciled.
+
+Download the EXE from release Assets. GitHub-generated source ZIP/TAR archives contain public documentation only and are not installers. Feature descriptions above do not certify acceptance of every workflow in this candidate. No BIR certification or production readiness is claimed.
 
 ## About & support
 
-**Salryn General Merchandise** · A Kirjane Labs product  
-Installer publisher display name: Kirjane Information Technology Services  
+**Salryn General Merchandise** · A Kirjane Labs product
+
+Installer publisher display name: Kirjane Information Technology Services
+
 Product assistance: [salryn.info@gmail.com](mailto:salryn.info@gmail.com)
 
 Salryn is proprietary software. Public access to this download repository does not grant rights to the application source code or an unrestricted software license. Installation, activation and use are subject to the applicable customer agreement.
