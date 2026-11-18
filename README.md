@@ -208,6 +208,6 @@ Download the EXE from release Assets. GitHub-generated source ZIP/TAR archives c
 
 Installer publisher display name: Kirjane Information Technology Services
 
-Product assistance: [salryn.info@gmail.com](mailto:salryn.info@gmail.com)
+Product assistance: [kirjanelabs@gmail.com](mailto:kirjanelabs@gmail.com)
 
 Salryn is proprietary software. Public access to this download repository does not grant rights to the application source code or an unrestricted software license. Installation, activation and use are subject to the applicable customer agreement.
