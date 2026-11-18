@@ -1,50 +1,68 @@
-# Installing Salryn General Merchandise
+# Installing Salryn General Merchandise Beta RC1
 
-[Product overview](README.md) · [Downloads](https://github.com/Kirch-Nairu/Salryn-General-Merchandise/releases) · [Support](SUPPORT.md)
+[Product overview](README.md) · [Release notes](https://github.com/Kirch-Nairu/Salryn-General-Merchandise/releases/tag/v0.1.0-rc1) · [Support](SUPPORT.md)
 
-## Before you begin
+> **Pilot testing only — unsigned installer (`NotSigned`).** Native clean-install and upgrade acceptance are incomplete. Use an authorized disposable Windows test environment with fictional data. Do not install on a live client workstation. Shared installer and data identity means this package may upgrade or replace an existing Salryn installation; it is not suitable for side-by-side use.
 
-Salryn is a Windows desktop application. The Beta RC1 package targets x64-compatible Windows PCs; a Windows 11 workstation has been used for internal acceptance. Confirm your specific Windows version, available disk space, hardware and license eligibility with Kirjane before onboarding. Administrator approval is required for setup, not routine application launch.
+## Download
 
-You do not need to install the .NET SDK, Node.js, npm, Inno Setup, or developer tools. The application contains its local runtime dependencies. Setup detects Microsoft Edge WebView2 Runtime and attempts to install it when missing. Internet access may be necessary for that step, even though routine Host operation is offline-ready.
+**[Download Salryn-General-Merchandise-BetaRC1-Setup.exe](https://github.com/Kirch-Nairu/Salryn-General-Merchandise/releases/download/v0.1.0-rc1/Salryn-General-Merchandise-BetaRC1-Setup.exe)**
 
-## First installation
+[Download the SHA-256 checksum file](https://github.com/Kirch-Nairu/Salryn-General-Merchandise/releases/download/v0.1.0-rc1/Salryn-General-Merchandise-BetaRC1-Setup.exe.sha256.txt)
 
-1. Open the official [Releases page](https://github.com/Kirch-Nairu/Salryn-General-Merchandise/releases). If no authorized release appears, contact support rather than obtaining installers from another source.
-2. Under Assets, download the Windows setup EXE (not the source-code ZIP or TAR archive).
-3. Compare its SHA-256 with the checksum published with that exact release. Check the signature and publisher information as described in the release notes. Do not proceed with a mismatch or unexplained Windows security warning; contact support.
-4. Run the installer and approve the Windows administrator prompt if authorized. Follow the wizard.
-5. Keep internet access available if setup needs to install WebView2.
-6. Open **Salryn General Merchandise** from the Start menu or desktop shortcut.
-7. Complete the initial store setup and product activation with Kirjane's onboarding guidance. Create authorized staff accounts, configure store details and receipt printing, then validate a test transaction before live operation.
+Version: `0.1.0-rc1` · Size: **23,583,715 bytes**
 
-## Verify the downloaded file
+SHA-256: `d2c5274cc4d28f2590755dc891e503973e8824a3faedf63e11227b2036c74eb8`
 
-In PowerShell, from the folder containing the downloaded installer:
+Use the EXE under release Assets. GitHub-generated source ZIP/TAR archives contain only public documentation and branding assets, not an installer or proprietary application source.
+
+## Requirements
+
+- An authorized disposable Windows x64 test environment. Confirm your Windows version and hardware with support; native clean-install acceptance has not been completed for this candidate.
+- Administrator authorization for setup.
+- **.NET 10 Desktop Runtime and ASP.NET Core Runtime.** This package is framework-dependent; these runtimes are not bundled. Developer tools such as the .NET SDK, Node.js, npm, and Inno Setup are not required.
+- **Microsoft Edge WebView2 Runtime.** Setup attempts to install it when missing; internet access may be required.
+- An appropriate test license and onboarding guidance from support. Accounts Receivable / Utang requires its optional licensed Host entitlement.
+
+## Verify before testing
+
+In PowerShell, from the download folder:
 
 ```powershell
 Get-FileHash .\Salryn-General-Merchandise-BetaRC1-Setup.exe -Algorithm SHA256
+(Get-Item .\Salryn-General-Merchandise-BetaRC1-Setup.exe).Length
 Get-AuthenticodeSignature .\Salryn-General-Merchandise-BetaRC1-Setup.exe
 ```
 
-Compare with the exact release's published checksum and signature status. A matching checksum detects differences from the referenced file; it does not replace a trusted digital signature. Do not disable antivirus, SmartScreen or other security controls.
+Confirm the hash and byte count above. The expected signature status is **NotSigned**. Publisher metadata is Kirjane Information Technology Services; it is not authenticated by a trusted digital signature. A matching checksum confirms file integrity, not application safety or trusted signing.
 
-## Updating an existing installation
+Stop on a hash or size mismatch. Do not bypass or disable SmartScreen, antivirus, or organizational security controls. If execution is blocked, contact support.
 
-- Schedule downtime and complete current transactions and shifts.
-- Create a verified application backup and keep a separate protected copy before proceeding. Confirm license recovery arrangements with support.
-- Close Salryn, download the approved update and confirm that it is appropriate for your current version.
-- Follow the supported installer upgrade procedure. Do not manually delete the database, license files, or application data.
-- Reopen the application and verify license status, store details, historical records, stock and receipt printing before returning to live transactions.
+## Disposable-environment evaluation
 
-The installer preserves the local application-data directory on supported upgrade and uninstall; this is not a substitute for backups. Do not use an older release as a database rollback method without support guidance.
+1. Review the release notes and open acceptance gates. Arrange an isolated test environment and test licensing with support.
+2. Download and verify both assets. Confirm runtime prerequisites.
+3. If organizational policy permits this unsigned beta, run setup in the disposable environment with administrator authorization and follow the wizard. Stop if Windows security controls block execution.
+4. Keep internet available if WebView2 setup requires it.
+5. Launch **Salryn General Merchandise**, complete authorized test activation and initial setup, and use fictional records.
+6. Evaluate checkout, inventory, procurement, reports, printing, and backup/restore as applicable. Record failures and contact support; successful local checks do not imply production acceptance.
 
-## Local data and backups
+## Existing installations, backups, and rollback
 
-Salryn stores business data locally in the Windows application-data directory. Use the in-app Backup & Restore workspace to create and verify backups. Restoring a backup replaces the current local database; only authorized personnel should perform a restore after consulting support when live records are involved.
+**Do not use Beta RC1 to upgrade a live client installation.** Shared installer/data identity can replace an existing Salryn installation. Upgrade data/license preservation, migrations, and rollback have not passed native acceptance.
 
-## Hardware and connectivity
+Before any separately authorized future upgrade, schedule downtime, complete current transactions and shifts, create and verify an application backup, keep a separate protected copy, and confirm license recovery and rollback arrangements with support. Do not delete application data or use an older installer as a database rollback method without support guidance.
 
-Keyboard-wedge barcode scanners and compatible Windows print queues are supported workflows. Test your exact scanner and printer during onboarding. The supported candidate is a Windows Host installation; LAN terminals are not part of the production offering for this candidate.
+Use Backup & Restore only in the disposable environment for this pilot. A restore replaces the current local database. Do not import live client databases into the pilot or post backups and license files publicly.
 
-For assistance, email [salryn.info@gmail.com](mailto:salryn.info@gmail.com).
+## Open acceptance gates
+
+- Native Windows clean installation and upgrade: **NOT RUN / BLOCKED**.
+- Packed installer payload: **not independently extracted or verified**.
+- Windows security lab (Issue #91, Gates A/B/C): **NOT RUN / BLOCKED**.
+- Independent source review and trusted signing/timestamping: **pending**.
+- Mocked browser suite: **FAIL, 30/56 passed**; 15 visual differences and 11 reported inherited selector mismatches, with the inherited classification not independently reconciled.
+
+Provenance regression 35/35, CoreSmoke, and web unit 15/15 are **reported PASS** checks, not native installation acceptance. No BIR certification or production-ready claim is made. LAN terminals and cloud synchronization are not offered for production use in this candidate.
+
+For assistance, contact [salryn.info@gmail.com](mailto:salryn.info@gmail.com). Include the version, Windows edition, and reproduction steps using fictional data; remove sensitive details from screenshots.
