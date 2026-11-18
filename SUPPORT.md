@@ -4,7 +4,7 @@
 
 ## Product support
 
-Contact **salryn.info@gmail.com** for onboarding, activation, installation assistance, hardware compatibility and product issues.
+Contact **kirjanelabs@gmail.com** for onboarding, activation, installation assistance, hardware compatibility and product issues.
 
 For an issue report, include the installed version, Windows edition, affected workspace, what you expected to happen, what happened instead, and steps to reproduce with fictional data where possible. Include a screenshot or relevant error message only after removing customer details and sensitive information. Never post license files, passwords, transaction databases, payment details or customer records to this public repository.
 
